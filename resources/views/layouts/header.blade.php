@@ -16,5 +16,9 @@
                 <button type="submit" class="dropdown-item">Logout</button>
             </form>
         </div>
+        <form action="{{ route('logout') }}" method="POST">
+            @csrf
+            <button type="submit" class="dropdown-item">Logout</button>
+        </form>
     </div>
 </div>
