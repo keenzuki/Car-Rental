@@ -1,4 +1,4 @@
-<div class="header bg-white p-3">
+<div class="header bg-blue-300 p-3">
     <a href="{{ route('dashboard') }}">Dashboard</a>
 
     <div class="dropdown float-right">

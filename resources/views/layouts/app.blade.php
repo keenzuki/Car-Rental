@@ -22,18 +22,21 @@
 </head>
 
 <body class="font-sans antialiased">
-    <div class="min-h-screen bg-gray-100">
-        {{-- @include('layouts.navigation') --}}
-        @guest()
-            @yield('header')
-            @yield('content')
-            @yield('footer')
-        @else
-            @yield('header')
-            @yield('content')
-            @yield('footer')
-        @endguest
-    </div>
+    @if (Auth::user()->is_admin)
+        <div class="row flex-nowrap">
+            @include('admin.sidebar')
+            <div class="col mt-5 py-4">
+                @yield('content')
+            </div>
+
+        </div>
+
+        @include('layouts.footer')
+    @else
+        @include('layouts.header')
+        @yield('content')
+        @yield('footer')
+    @endif
 </body>
 
 </html>
