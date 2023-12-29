@@ -146,10 +146,10 @@
                 </div>
               </li>
               <li class="nav-item mt-1 d-none d-lg-inline">
-                <a class="btn btn-outline-dark btn-sm" href="#">Sign in</a>
+                <a class="btn btn-outline-dark btn-sm" href="{{ route('login') }}">Sign in</a>
               </li>
               <li class="nav-item mt-1 d-none d-lg-inline">
-                <a class="btn btn-outline-dark btn-sm" href="#">Register</a>
+                <a class="btn btn-outline-dark btn-sm" href="{{ route('register') }}">Register</a>
               </li>
             </ul>
           </div>
@@ -200,13 +200,13 @@
               </div>
           </div>
 
-          <div class="col-auto d-sm-flex d-none">
+          <div class="col-auto d-md-flex d-none">
               <button type="submit" class="btn btn-primary rounded-pill btn-lg mt-2" 
               style="--bs-btn-padding-y: 0.7rem; --bs-btn-padding-x: 4rem; --bs-btn-font-size: 1.2rem; font-weight:500;">
               Search</button>
           </div>
 
-          <div class="col-auto d-sm-none mx-auto">
+          <div class="col-auto d-md-none mx-auto">
               <button type="submit" class="btn btn-primary rounded-pill btn-lg mt-2" 
               style="--bs-btn-padding-y: 0.7rem; --bs-btn-padding-x: 4rem; --bs-btn-font-size: 1.2rem; font-weight:500;">
               Search</button>
@@ -310,7 +310,7 @@
             <h1 class="text-dark" style="font-size: 33px;font-weight:640">Explore Our Exclusive Cars</h1>
         </div>
 
-        <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 justify-content-between mt-3">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-between mt-3">
 
           <div class="col">
             <div class="card mb-3">
@@ -457,10 +457,10 @@
       <div class="container-xxl mt-3">
         <div class="card mb-3">
           <div class="row g-0">
-            <div class="col-md-4">
+            <div class="col-sm-4">
               <img src="images/xan-unsplash.jpg" class="img-fluid rounded-start" alt="...">
             </div>
-            <div class="col-md-8">
+            <div class="col-sm-8">
               <div class="card-body text-center">
                 <h1 class="Card-title text-dark p-1" style="font-size: 33px;font-weight:640">Most Viewed Cars</h1>
                 <p class="card-text px-1">You can get to see and choose from our range of cars that have been viewed by most of our clients.</p>
@@ -562,10 +562,10 @@
                     <div class="carousel-item active" data-bs-interval="5000">
                       <div class="card mb-3">
                           <div class="row g-0">
-                              <div class="col-md-4">
+                              <div class="col-4">
                                   <img src="images/Face.jpg" class="img-fluid rounded-start" alt="no image">
                               </div>
-                              <div class="col-md-8">
+                              <div class="col-8 mt-sm-3">
                                   <div class="card-body">
                                       <h5 class="card-title fw-semibold">Sarah K</h5>
                                       <p class="card-text">I am really pleased by your services. I can recommend you 
@@ -580,10 +580,10 @@
                     <div class="carousel-item" data-bs-interval="5000">
                       <div class="card mb-3">
                           <div class="row g-0">
-                              <div class="col-md-4">
+                              <div class="col-4">
                                   <img src="images/Face 3.jpg" class="img-fluid rounded-start" alt="no image">
                               </div>
-                              <div class="col-md-8">
+                              <div class="col-8 mt-sm-3">
                                   <div class="card-body">
                                       <h5 class="card-title">Juma J</h5>
                                       <p class="card-text">So far the best car hiring I have worked with. Excellent customer service</p>
@@ -597,10 +597,10 @@
                     <div class="carousel-item" data-bs-interval="5000">
                       <div class="card mb-3">
                           <div class="row g-0">
-                              <div class="col-md-4">
+                              <div class="col-4">
                                   <img src="images/Face 4.jpeg" class="img-fluid rounded-start" alt="no image">
                               </div>
-                              <div class="col-md-8">
+                              <div class="col-8 mt-sm-3">
                                   <div class="card-body">
                                       <h5 class="card-title">Oliver O</h5>
                                       <p class="card-text">I am really pleased by your services. I reccomend you to every future client
@@ -616,10 +616,10 @@
                     <div class="carousel-item" data-bs-interval="5000">
                       <div class="card mb-3">
                           <div class="row g-0">
-                              <div class="col-md-4">
+                              <div class="col-4">
                                   <img src="images/Face 2.jpeg" class="img-fluid rounded-start" alt="...">
                               </div>
-                              <div class="col-md-8">
+                              <div class="col-8 mt-sm-3">
                                   <div class="card-body">
                                       <h5 class="card-title">Keen F</h5>
                                       <p class="card-text">So far the best car hiring I have worked with. Excellent customer service</p>
