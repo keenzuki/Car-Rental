@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
         body {
             width: 100vw;
@@ -150,23 +149,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Policy</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('register') }}">Register</a>
-                    </li>
                     <li class="nav-item d-none d-lg-inline">
                         <div class="d-flex" style="height: 40px">
                             <div class="vr"></div>
                         </div>
                     </li>
                     <li class="nav-item mt-1 d-none d-lg-inline">
-                        <a class="btn btn-success btn-outline-dark text-white btn-sm" href="{{ route('login') }}">Sign
+                        <a class="btn btn-outline-dark btn-sm" href="{{ route('login') }}">Sign
                             in</a>
                     </li>
                     <li class="nav-item mt-1 d-none d-lg-inline">
-                        <a class="btn btn-info btn-outline-dark btn-sm" href="{{ route('register') }}">Register</a>
+                        <a class="btn btn-outline-dark btn-sm" href="{{ route('register') }}">Register</a>
                     </li>
                 </ul>
             </div>
@@ -341,7 +334,7 @@
             <h1 class="text-dark" style="font-size: 33px;font-weight:640">Explore Our Exclusive Cars</h1>
         </div>
 
-        <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 justify-content-between mt-3">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-between mt-3">
 
             <div class="col">
                 <div class="card mb-3">
@@ -633,10 +626,10 @@
                         <div class="carousel-item active" data-bs-interval="5000">
                             <div class="card mb-3">
                                 <div class="row g-0">
-                                    <div class="col-md-4">
+                                    <div class="col-4">
                                         <img src="images/Face.jpg" class="img-fluid rounded-start" alt="no image">
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-8">
                                         <div class="card-body">
                                             <h5 class="card-title fw-semibold">Sarah K</h5>
                                             <p class="card-text">I am really pleased by your services. I can recommend
@@ -653,10 +646,10 @@
                         <div class="carousel-item" data-bs-interval="5000">
                             <div class="card mb-3">
                                 <div class="row g-0">
-                                    <div class="col-md-4">
+                                    <div class="col-4">
                                         <img src="images/Face 3.jpg" class="img-fluid rounded-start" alt="no image">
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-8">
                                         <div class="card-body">
                                             <h5 class="card-title">Juma J</h5>
                                             <p class="card-text">So far the best car hiring I have worked with.
@@ -672,10 +665,10 @@
                         <div class="carousel-item" data-bs-interval="5000">
                             <div class="card mb-3">
                                 <div class="row g-0">
-                                    <div class="col-md-4">
+                                    <div class="col-4">
                                         <img src="images/Face 4.jpeg" class="img-fluid rounded-start" alt="no image">
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-8">
                                         <div class="card-body">
                                             <h5 class="card-title">Oliver O</h5>
                                             <p class="card-text">I am really pleased by your services. I reccomend you
@@ -693,10 +686,10 @@
                         <div class="carousel-item" data-bs-interval="5000">
                             <div class="card mb-3">
                                 <div class="row g-0">
-                                    <div class="col-md-4">
+                                    <div class="col-4">
                                         <img src="images/Face 2.jpeg" class="img-fluid rounded-start" alt="...">
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-8">
                                         <div class="card-body">
                                             <h5 class="card-title">Keen F</h5>
                                             <p class="card-text">So far the best car hiring I have worked with.
