@@ -22,7 +22,7 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
                 <li>
-                    <form method="get" action="">
+                    <form method="get" action="{{ route('profile.edit') }}">
                         @csrf
                         <button type="submit" class="btn btn-link dropdown-item">Profile</button>
                     </form>
