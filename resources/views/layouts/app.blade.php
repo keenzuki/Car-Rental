@@ -25,17 +25,15 @@
     @if (Auth::user()->is_admin)
         <div class="row flex-nowrap">
             @include('admin.sidebar')
-            <div class="col mt-5 py-4">
+            <div class="col mt-1 py-4 card ml-1 bg-gray-200">
                 @yield('content')
             </div>
-
         </div>
-
         @include('layouts.footer')
     @else
         @include('layouts.header')
         @yield('content')
-        @yield('footer')
+        @include('layouts.footer')
     @endif
 </body>
 
