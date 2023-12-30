@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Scripts -->
     <style>
         body {
             width: 100vw;
@@ -113,40 +112,6 @@
                 </span>
             </a>
 
-<<<<<<< HEAD
-          {{-- toggle button --}}
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          {{-- navbar links --}}
-          <div class="collapse navbar-collapse justify-content-end align-center fw-medium" id="navbarTogglerDemo02" style="font-size: 90%">
-            <ul class="navbar-nav  mb-2 mb-lg-0 gap-3">
-              <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Policy</a>
-              </li>
-              <li class="nav-item d-none d-lg-inline">
-                <div class="d-flex" style="height: 40px">
-                  <div class="vr"></div>
-                </div>
-              </li>
-              <li class="nav-item mt-1 d-none d-lg-inline">
-                <a class="btn btn-outline-dark btn-sm" href="{{ route('login') }}">Sign in</a>
-              </li>
-              <li class="nav-item mt-1 d-none d-lg-inline">
-                <a class="btn btn-outline-dark btn-sm" href="{{ route('register') }}">Register</a>
-              </li>
-            </ul>
-          </div>
-=======
             {{-- navbar icons & tooltips --}}
             <div class="d-lg-none d-flex align-items-center gap-4 ms-auto mx-4">
                 <a href="#" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sign in">
@@ -197,7 +162,6 @@
                     </li>
                 </ul>
             </div>
->>>>>>> 150dd138133decd0aa2f9b0d7c5ecbca2c80cd1d
 
         </div>
     </nav>
@@ -245,31 +209,17 @@
                 </div>
             </div>
 
-<<<<<<< HEAD
-          <div class="col-auto d-md-flex d-none">
-              <button type="submit" class="btn btn-primary rounded-pill btn-lg mt-2" 
-              style="--bs-btn-padding-y: 0.7rem; --bs-btn-padding-x: 4rem; --bs-btn-font-size: 1.2rem; font-weight:500;">
-              Search</button>
-          </div>
-
-          <div class="col-auto d-md-none mx-auto">
-              <button type="submit" class="btn btn-primary rounded-pill btn-lg mt-2" 
-              style="--bs-btn-padding-y: 0.7rem; --bs-btn-padding-x: 4rem; --bs-btn-font-size: 1.2rem; font-weight:500;">
-              Search</button>
-          </div>
-=======
-            <div class="col-auto d-sm-flex d-none">
+            <div class="col-auto d-md-flex d-none">
                 <button type="submit" class="btn btn-primary rounded-pill btn-lg mt-2"
                     style="--bs-btn-padding-y: 0.7rem; --bs-btn-padding-x: 4rem; --bs-btn-font-size: 1.2rem; font-weight:500;">
                     Search</button>
             </div>
 
-            <div class="col-auto d-sm-none mx-auto">
+            <div class="col-auto d-md-none mx-auto">
                 <button type="submit" class="btn btn-primary rounded-pill btn-lg mt-2"
                     style="--bs-btn-padding-y: 0.7rem; --bs-btn-padding-x: 4rem; --bs-btn-font-size: 1.2rem; font-weight:500;">
                     Search</button>
             </div>
->>>>>>> 150dd138133decd0aa2f9b0d7c5ecbca2c80cd1d
         </form>
 
     </div>
@@ -404,7 +354,7 @@
                                             style="font-size: 20px"></i></small></p>
                                 <p class="fw-semibold px-2"><small>Petrol <i class="bi bi-fuel-pump-fill ms-2"
                                             style="font-size: 20px"></i></small></p>
-                                <a href="#" class="px-4 me-2 text-start btn btn-outline-secondary">Reserve</a>
+                                <a href="#" class="px-4 me-2 text-start btn btn-secondary">Reserve</a>
                             </div>
                         </div>
                     </div>
@@ -430,7 +380,7 @@
                                             style="font-size: 20px"></i></small></p>
                                 <p class="fw-semibold px-2"><small>Petrol <i class="bi bi-fuel-pump-fill ms-2"
                                             style="font-size: 20px"></i></small></p>
-                                <a href="#" class="px-4 me-2 text-start btn btn-outline-secondary">Reserve</a>
+                                <a href="#" class="px-4 me-2 text-start btn btn-secondary">Reserve</a>
                             </div>
                         </div>
                     </div>
@@ -456,7 +406,7 @@
                                             style="font-size: 20px"></i></small></p>
                                 <p class="fw-semibold px-2"><small>Petrol <i class="bi bi-fuel-pump-fill ms-2"
                                             style="font-size: 20px"></i></small></p>
-                                <a href="#" class="px-4 me-2 text-start btn btn-outline-secondary">Reserve</a>
+                                <a href="#" class="px-4 me-2 text-start btn btn-secondary">Reserve</a>
                             </div>
                         </div>
                     </div>
@@ -482,7 +432,7 @@
                                             style="font-size: 20px"></i></small></p>
                                 <p class="fw-semibold px-2"><small>Petrol <i class="bi bi-fuel-pump-fill ms-2"
                                             style="font-size: 20px"></i></small></p>
-                                <a href="#" class="px-4 me-2 text-start btn btn-outline-secondary">Reserve</a>
+                                <a href="#" class="px-4 me-2 text-start btn btn-secondary">Reserve</a>
                             </div>
                         </div>
                     </div>
@@ -508,7 +458,7 @@
                                             style="font-size: 20px"></i></small></p>
                                 <p class="fw-semibold px-2"><small>Petrol <i class="bi bi-fuel-pump-fill ms-2"
                                             style="font-size: 20px"></i></small></p>
-                                <a href="#" class="px-4 me-2 text-start btn btn-outline-secondary">Reserve</a>
+                                <a href="#" class="px-4 me-2 text-start btn btn-secondary">Reserve</a>
                             </div>
                         </div>
                     </div>
@@ -534,7 +484,7 @@
                                             style="font-size: 20px"></i></small></p>
                                 <p class="fw-semibold px-2"><small>Petrol <i class="bi bi-fuel-pump-fill ms-2"
                                             style="font-size: 20px"></i></small></p>
-                                <a href="#" class="px-4 me-2 text-start btn btn-outline-secondary">Reserve</a>
+                                <a href="#" class="px-4 me-2 text-start btn btn-secondary">Reserve</a>
                             </div>
                         </div>
                     </div>
@@ -553,26 +503,11 @@
     {{-- most viewed cars --}}
     <div class="container-xxl mt-3">
         <div class="card mb-3">
-<<<<<<< HEAD
-          <div class="row g-0">
-            <div class="col-sm-4">
-              <img src="images/xan-unsplash.jpg" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-sm-8">
-              <div class="card-body text-center">
-                <h1 class="Card-title text-dark p-1" style="font-size: 33px;font-weight:640">Most Viewed Cars</h1>
-                <p class="card-text px-1">You can get to see and choose from our range of cars that have been viewed by most of our clients.</p>
-                <p class="card-text px-1 fw-bold mt-5"><small>Want to see the most viewed cars?</small></p>
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-                  <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
-                  <span role="status">Click me</span>
-                </button>
-=======
             <div class="row g-0">
-                <div class="col-md-4">
+                <div class="col-sm-4">
                     <img src="images/xan-unsplash.jpg" class="img-fluid rounded-start" alt="...">
                 </div>
-                <div class="col-md-8">
+                <div class="col-sm-8">
                     <div class="card-body text-center">
                         <h1 class="Card-title text-dark p-1" style="font-size: 33px;font-weight:640">Most Viewed Cars
                         </h1>
@@ -585,7 +520,6 @@
                             <span role="status">Click me</span>
                         </button>
                     </div>
->>>>>>> 150dd138133decd0aa2f9b0d7c5ecbca2c80cd1d
                 </div>
             </div>
         </div>
@@ -688,77 +622,6 @@
                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner">
 
-<<<<<<< HEAD
-                    <div class="carousel-item active" data-bs-interval="5000">
-                      <div class="card mb-3">
-                          <div class="row g-0">
-                              <div class="col-4">
-                                  <img src="images/Face.jpg" class="img-fluid rounded-start" alt="no image">
-                              </div>
-                              <div class="col-8 mt-sm-3">
-                                  <div class="card-body">
-                                      <h5 class="card-title fw-semibold">Sarah K</h5>
-                                      <p class="card-text">I am really pleased by your services. I can recommend you 
-                                        to every future client who wish to hire a vehicle.</p>
-                                      <p class="card-text"><small class="text-body-secondary">12 March 2022</small></p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                    </div>
-
-                    <div class="carousel-item" data-bs-interval="5000">
-                      <div class="card mb-3">
-                          <div class="row g-0">
-                              <div class="col-4">
-                                  <img src="images/Face 3.jpg" class="img-fluid rounded-start" alt="no image">
-                              </div>
-                              <div class="col-8 mt-sm-3">
-                                  <div class="card-body">
-                                      <h5 class="card-title">Juma J</h5>
-                                      <p class="card-text">So far the best car hiring I have worked with. Excellent customer service</p>
-                                      <p class="card-text"><small class="text-body-secondary">28 Dec 2023</small></p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                    </div>
-
-                    <div class="carousel-item" data-bs-interval="5000">
-                      <div class="card mb-3">
-                          <div class="row g-0">
-                              <div class="col-4">
-                                  <img src="images/Face 4.jpeg" class="img-fluid rounded-start" alt="no image">
-                              </div>
-                              <div class="col-8 mt-sm-3">
-                                  <div class="card-body">
-                                      <h5 class="card-title">Oliver O</h5>
-                                      <p class="card-text">I am really pleased by your services. I reccomend you to every future client
-                                        who wish to have a vehicle.
-                                      </p>
-                                      <p class="card-text"><small class="text-body-secondary">13 May 2023</small></p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                    </div>
-                    
-                    <div class="carousel-item" data-bs-interval="5000">
-                      <div class="card mb-3">
-                          <div class="row g-0">
-                              <div class="col-4">
-                                  <img src="images/Face 2.jpeg" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-8 mt-sm-3">
-                                  <div class="card-body">
-                                      <h5 class="card-title">Keen F</h5>
-                                      <p class="card-text">So far the best car hiring I have worked with. Excellent customer service</p>
-                                      <p class="card-text"><small class="text-body-secondary">15 Dec 2023</small></p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-=======
                         <div class="carousel-item active" data-bs-interval="5000">
                             <div class="card mb-3">
                                 <div class="row g-0">
@@ -766,7 +629,7 @@
                                         <img src="images/Face.jpg" class="img-fluid rounded-start" alt="no image">
                                     </div>
                                     <div class="col-8">
-                                        <div class="card-body">
+                                        <div class="card-body mt-3">
                                             <h5 class="card-title fw-semibold">Sarah K</h5>
                                             <p class="card-text">I am really pleased by your services. I can recommend
                                                 you
@@ -786,7 +649,7 @@
                                         <img src="images/Face 3.jpg" class="img-fluid rounded-start" alt="no image">
                                     </div>
                                     <div class="col-8">
-                                        <div class="card-body">
+                                        <div class="card-body mt-3">
                                             <h5 class="card-title">Juma J</h5>
                                             <p class="card-text">So far the best car hiring I have worked with.
                                                 Excellent customer service</p>
@@ -805,7 +668,7 @@
                                         <img src="images/Face 4.jpeg" class="img-fluid rounded-start" alt="no image">
                                     </div>
                                     <div class="col-8">
-                                        <div class="card-body">
+                                        <div class="card-body mt-3">
                                             <h5 class="card-title">Oliver O</h5>
                                             <p class="card-text">I am really pleased by your services. I reccomend you
                                                 to every future client
@@ -826,7 +689,7 @@
                                         <img src="images/Face 2.jpeg" class="img-fluid rounded-start" alt="...">
                                     </div>
                                     <div class="col-8">
-                                        <div class="card-body">
+                                        <div class="card-body mt-3">
                                             <h5 class="card-title">Keen F</h5>
                                             <p class="card-text">So far the best car hiring I have worked with.
                                                 Excellent customer service</p>
@@ -837,7 +700,6 @@
                                 </div>
                             </div>
                         </div>
->>>>>>> 150dd138133decd0aa2f9b0d7c5ecbca2c80cd1d
                     </div>
                 </div>
             </div>
