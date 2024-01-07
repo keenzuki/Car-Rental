@@ -1,71 +1,118 @@
 <style>
-    .nav-link {
-        color: #000000;
-
+    body {
+        width: 100vw;
+        margin-top: 60px;
     }
-</style>
-<div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-blue-200">
-    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-        <a href="" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-            <span class="fs-5 d-none d-sm-inline">Menu</span>
-        </a>
-        <div class="dropdown pb-4">
-            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-                id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                <div class="position-relative">
-                    <img src="{{ asset('img/profiles/' . Auth::user()->photo) }}" alt="admin" width="50"
-                        height="50" class="rounded-circle">
-                    <span class="badge bg-success rounded-circle position-absolute top-0 end-0"
-                        style="width: 6px; height: 13px;">&nbsp;</span>
-                </div>
-                <span class="d-none d-sm-inline mx-1">{{ Auth::user()->last_name }}</span>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                <li>
-                    <form method="get" action="{{ route('profile.edit') }}">
-                        @csrf
-                        <button type="submit" class="btn btn-link dropdown-item">Profile</button>
-                    </form>
-                </li>
-                <li>
-                    <form method="post" action="{{ route('logout') }}">
-                        @csrf
-                        <button type="submit" class="btn btn-link dropdown-item">Sign out</button>
-                    </form>
-                </li>
-            </ul>
 
-        </div>
-        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-            <li class="nav-item">
-                <a href="{{ route('admin.sidebar') }}" class="nav-link align-middle px-0">
-                    <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
-                </a>
-            </li>
-            <li>
-                <a href="" class="nav-link px-0 align-middle">
-                    <i class="fs-4 bi-house-door-fill"></i> <span class="ms-1 d-none d-sm-inline">Car Type</span></a>
-            </li>
-            <li>
-                <a href="" class="nav-link px-0 align-middle">
-                    <i class="fs-4 fas fa-hat-cowboy"></i></i> <span class="ms-1 d-none d-sm-inline">Car Make</span></a>
-            </li>
-            <li>
-                <a href="" class="nav-link px-0 align-middle">
-                    <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Bookings</span></a>
-            </li>
-            <li>
-                <a href="" class="nav-link px-0 align-middle">
-                    <i class="fs-4 bi-card-checklist"></i> <span class="ms-1 d-none d-sm-inline">Payments</span></a>
-            </li>
-            <li>
-                <a href="" class="nav-link px-0 align-middle">
-                    <i class="fs-4 bi-building"></i> <span class="ms-1 d-none d-sm-inline">Cars</span></a>
-            </li>
-            <li>
-                <a href="" class="nav-link px-0 align-middle">
-                    <i class="fs-4 bi-house-door-fill"></i> <span class="ms-1 d-none d-sm-inline">Car Model</span></a>
-            </li>
-        </ul>
+    #left-panel {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    }
+
+    .sidebar {
+        height: 100%;
+    }
+
+    .left-panel {
+        max-width: 285px;
+        z-index: 1;
+    }
+
+    @media (max-width: 1200px) {
+    .left-panel {
+        max-width: 100px
+    }
+    }
+
+    @media (max-width: 765px) {
+    .left-panel {
+        max-width: 100vw
+    }
+    }
+    .navbar-nav .nav-link {
+        color: rgb(101, 100, 100);
+        transition: color 0.3s ease;
+        font-style: inherit
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: rgb(72, 175, 235);
+    }
+    .heading {
+        font-weight: 620;
+        color: rgb(50, 49, 49)
+    }
+
+</style>
+<body>
+    <div id="left-panel" class="left-panel d-md-inline collapse navbar-collapse col-md-2 col-xl-3">
+        <nav class="navbar sidebar navbar-expand border-end bg-white align-items-start mt-5 shadow-sm" >
+            <div id="main-menu" class="main-menu">
+                <ul class="nav navbar-nav flex-column ms-3 mt-3">
+
+                    <li class="nav-item active p-1 mb-2">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-laptop" style="font-size: 20px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dashboard"></i>
+                            <span class="ms-4 d-inline d-md-none d-xl-inline">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item p-1 ms-2 d-block d-md-none d-xl-block mb-2">
+                        <span class="heading">CARS</span>
+                    </li>
+
+                    <li class="nav-item active p-1 mb-2">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-car-front" style="font-size: 20px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="View Cars"></i>
+                            <span class="ms-4 d-inline d-md-none d-xl-inline">View Cars</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item active p-1 mb-2">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-car-front-fill" style="font-size: 20px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Register Cars"></i>
+                            <span class="ms-4 d-inline d-md-none d-xl-inline">Register Car</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item p-1 ms-2 d-block d-md-none d-xl-block mb-2">
+                        <span class="heading">USERS</span>
+                    </li>
+
+                    <li class="nav-item active p-1 mb-2">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-person-fill" style="font-size: 20px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="View Users"></i>
+                            <span class="ms-4 d-inline d-md-none d-xl-inline">View Users</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item active p-1 mb-2">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-person-fill-add" style="font-size: 20px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Register Users"></i>
+                            <span class="ms-4 d-inline d-md-none d-xl-inline">Register Users</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item p-1 ms-2 d-block d-md-none d-xl-block mb-2">
+                        <span class="heading">TRANSACTIONS</span>
+                    </li>
+
+                    <li class="nav-item active p-1 mb-2">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-receipt-cutoff" style="font-size: 20px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bookings"></i>
+                            <span class="ms-4 d-inline d-md-none d-xl-inline">Bookings</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item active p-1 mb-2">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-cash-coin" style="font-size: 20px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Payments"></i>
+                            <span class="ms-4 d-inline d-md-none d-xl-inline">Payments</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
-</div>
+</body>
